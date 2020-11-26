@@ -1,0 +1,27 @@
+.tab {
+  background: rgb(132, 142, 238);
+  float: left;
+  width: 13.5%;
+  margin-right: 2%;
+  text-align: center;
+  transition: all ease 0.5s;
+  padding: 10px;
+}
+
+.tab:hover {
+  background: rgb(186, 192, 248);
+  /* color: white; */
+  box-shadow: 0 0 10px rgb(186, 192, 248), 0 0 40px rgb(186, 192, 248),
+    0 0 80px white;
+  transition: all ease 0.5s;
+}
+
+.output {
+  clear: both;
+}
+.content {
+  display: none;
+}
+.content.active {
+  display: block;
+}
