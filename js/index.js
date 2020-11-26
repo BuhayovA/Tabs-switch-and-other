@@ -2,12 +2,16 @@ let tabs = document.querySelector('.tabs')
 let output = document.querySelector('.output')
 
 
-let arr = ['Item One', 'Item Two', 'Item Three']
+let arr = ['Item One', 'Item Two', 'Item Three','Item Four']
 
 
-tabs.addEventListener('click', event => {
-    arr.forEach((elem,index) => {
-        if(event.target.id === index.toString()) output.innerHTML = elem
+function tabsListener (tabs, arr, output) {
+    tabs.addEventListener('click', event => {
+        arr.forEach((elem,index) => {
+            if(event.target.id === index.toString()) output.innerHTML = elem
+        })
     })
-})
- 
+}
+
+tabsListener(tabs,arr,output);
+
