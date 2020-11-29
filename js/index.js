@@ -1,17 +1,25 @@
-let tabs = document.querySelector('.tabs')
-let output = document.querySelector('.output')
+let tabs = document.querySelectorAll('.tabs-container')
+let output = document.querySelectorAll('.content')
+
+// console.log(tabActive);
+// console.log(output);
+// console.log(tabs);  
 
 
-let arr = ['Item One', 'Item Two', 'Item Three','Item Four']
-
-
-function tabsListener (tabs, arr, output) {
-    tabs.addEventListener('click', event => {
-        arr.forEach((elem,index) => {
-            if(event.target.id === index.toString()) output.innerHTML = elem
-        })
-    })
-}
-
-tabsListener(tabs,arr,output);
-
+tabs.forEach( tabsInstance =>  {
+   const tabList = tabsInstance.querySelectorAll('.tab')
+   let outputs = tabsInstance.querySelectorAll('.content')
+   tabList.forEach((tab, tabIndex) =>{
+        tab.onclick = () => {
+            tabList.forEach(t => t.className = 'tab')
+            tab.className = 'tab tab_active'
+            outputs.forEach((output, index) => {
+                if(index === tabIndex){
+                    output.className = 'content active'
+                }else {
+                    output.className = 'content'
+                }
+            })
+        }
+   } )
+} )
