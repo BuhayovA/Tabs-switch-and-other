@@ -38,9 +38,9 @@ h2 {
 .content {
   display: none;
   padding: 2%;
-  /* width: 100%; */
   font-size: 20px;
   margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .active {
