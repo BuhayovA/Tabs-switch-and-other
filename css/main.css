@@ -1,4 +1,5 @@
 .tab {
+  color: white;
   background: #6200ee;
   width: 10.5%;
   text-align: center;
@@ -24,9 +25,6 @@
   box-shadow: 0 0 10px rgb(186, 192, 248), 0 0 40px rgb(186, 192, 248),
     0 0 80px white;
   transition: all ease 0.5s;
-  -moz-transition: background-color 0.8s 0.1s ease;
-  -o-transition: background-color 0.8s 0.1s ease;
-  -webkit-transition: background-color 0.8s 0.1s ease;
 }
 
 .content {
