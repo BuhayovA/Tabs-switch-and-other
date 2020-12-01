@@ -11,13 +11,11 @@ tabs.forEach( tabsInstance =>  {
 
 function tabsFunction(tabList,outputs) {
     tabList.forEach((tab, tabIndex) =>{
-        // if(tabIndex === 0)
-        //     tab.className = 'tab tab_active'
         tab.onclick = () => {
             tabList.forEach(t => t.className = 'tab')
             tab.className = 'tab tab_active'
             outputs.forEach((output, index) => {
-                output.className = +index === tabIndex ? 'content active' : 'content'
+                setTimeout(() => output.className = +index === tabIndex ? 'content active' : 'content', 120)
             })
         }
    } )
