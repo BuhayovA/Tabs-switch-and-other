@@ -10,35 +10,47 @@
 <body>
     <div class="tabs-container">
         <div class="tabs">
-            <h1 class="tab tab_active" id="0">Item One</h1>
-            <h1 class="tab" id="1">Item Two</h1>
-            <h1 class="tab" id="2">Item Three</h1>
-            <h1 class="tab" id="3">Item Four</h1>
+            <h2 class="tab tab_active" id="0">Item One</h2>
+            <h2 class="tab" id="1">Item Two</h2>
+            <h2 class="tab" id="2">Item Three</h2>
+            <h2 class="tab" id="3">Item Four</h2>
+            <h2 class="tab" id="4">Item Five</h2>
         </div>
         <div class="output">
             <content class="content active" id='content-0'>Item One</content>
-            <content class="content" id='content-1'>Item Two</content>
+            <content class="content" id='content-1'>
+                Item Two
+            </content>
             <content class="content" id='content-2'>Item Three</content>
             <content class="content" id='content-3'>Item Four</content>
+            <content class="content" id='content-4'>
+                
+                
+                <div class="tabs-container">
+                <div class="tabs">
+                    <h2 class="tab tab_active" id="0">Item One</h2>
+                    <h2 class="tab" id="1">Item Two</h2>
+                    <h2 class="tab" id="2">Item Three</h2>
+                    <h2 class="tab" id="3">Item Four</h2>
+                </div>
+                <div class="output">
+                    <content class="content active" id='content-0'>Item</content>
+                    <content class="content" id='content-1'>Item Two</content>
+                    <content class="content" id='content-2'>Item Three</content>
+                    <content class="content" id='content-3'>Item Four</content>
+                    <content class="content" id='content-3'>Item Four</content>
+
+                </div>
+            </div>
+        
+        
+        </content>
         </div>
     </div>
-    <div class="tabs-container">
-        <div class="tabs">
-            <h1 class="tab tab_active" id="0">Item One</h1>
-            <h1 class="tab" id="1">Item Two</h1>
-            <h1 class="tab" id="2">Item Three</h1>
-            <h1 class="tab" id="3">Item Four</h1>
-        </div>
-        <div class="output">
-            <content class="content active" id='content-0'>Item One</content>
-            <content class="content" id='content-1'>Item Two</content>
-            <content class="content" id='content-2'>Item Three</content>
-            <content class="content" id='content-3'>Item Four</content>
-        </div>
+    <div class="accordion-container">
+        <div class="accordions"></div>
+        <div class="accordions-outputs"></div>
     </div>
-   
-    
-   
     <script src="js/index.js"></script> 
 </body>
 </html>
