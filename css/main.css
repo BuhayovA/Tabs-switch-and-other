@@ -49,3 +49,22 @@ h2 {
 .active {
   display: block;
 }
+
+.accordion {
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.accordion {
+  position: relative;
+  color: black;
+}
+
+.accordion-output {
+  display: none;
+}
+
+.accordion-output.active {
+  display: block;
+}
