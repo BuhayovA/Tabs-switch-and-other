@@ -37,3 +37,4 @@ accordions.forEach(accordsInstanse => {
         someClicks++
     })
 })
+
