@@ -30,7 +30,6 @@ accordions.forEach(accordsInstanse => {
     let outputs = accordsInstanse.querySelectorAll('.accordion-output')
     let accordion = accordsInstanse.querySelector('.accordion')
     let someClicks = 1;
-    console.log(accordion);
     accordion.addEventListener('click', () => {
         outputs.forEach(output => {
             output.className = someClicks % 2 ? 'accordion-output active' : 'accordion-output'
