@@ -1,4 +1,5 @@
 @import url(../fonts/Montserrat-Regular.ttf);
+@import url(/css/switch.css);
 
 body {
   font-family: "Montserrat", sans-serif;
