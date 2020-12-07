@@ -40,6 +40,9 @@ class Switch{
     constructor(selector) {
         this.$el = [...document.querySelectorAll(selector)]
     }
+    setActive(state){
+        toggleState = state
+    }
 }
 
 
@@ -53,15 +56,12 @@ class Background extends Switch{
             element.style.color = options.color
         });
     }
-    setActive(state){
-        toggleState = state
-    }
 }
 
 toggle.addEventListener ('click', () => {
     
 
-    if(toggleState === false) {
+    if(toggleState === true) {
         const bodyBackground = new Background({
             selector: 'body',
             background: '#121212'
@@ -80,7 +80,7 @@ toggle.addEventListener ('click', () => {
             background: '#282828',
             color: 'white'
         })
-        bodyBackground.setActive(true)
+        bodyBackground.setActive(false)
     }else {
         
         const bodyBackground = new Background({
@@ -100,7 +100,7 @@ toggle.addEventListener ('click', () => {
             background: 'white',
             color: 'black'
         })
-        bodyBackground.setActive(false)
+        bodyBackground.setActive(true)
     }
 })
 
