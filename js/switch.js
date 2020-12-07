@@ -61,7 +61,7 @@ class Background extends Switch{
 toggle.addEventListener ('click', () => {
     
 
-    if(toggleState === true) {
+    if(toggleState === false) {
         const bodyBackground = new Background({
             selector: 'body',
             background: '#121212'
@@ -80,7 +80,7 @@ toggle.addEventListener ('click', () => {
             background: '#282828',
             color: 'white'
         })
-        bodyBackground.setActive(false)
+        bodyBackground.setActive(true)
     }else {
         
         const bodyBackground = new Background({
@@ -100,7 +100,7 @@ toggle.addEventListener ('click', () => {
             background: 'white',
             color: 'black'
         })
-        bodyBackground.setActive(true)
+        bodyBackground.setActive(false)
     }
 })
 
