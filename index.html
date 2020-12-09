@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="main.css">
     
     
     <title>Tabs</title>
@@ -16,8 +16,12 @@
             <h2 class="tab" id="2">Item Three</h2>
             <h2 class="tab" id="3">Item Four</h2>
             <h2 class="tab" id="4">Item Five</h2>
-            <h2> 
-            </h2>
+            <label class="label">
+                <div class="toggle">
+                  <input class="toggle-state" type="checkbox" checked/>
+                  <div class="indicator"></div>
+                </div>
+            </label>
         </div>
         <div class="output">
             <content class="content active" id='content-0'>Item One</content>
@@ -31,11 +35,7 @@
                 <div class="accordion-container">
                     <div class="accordion" id='0'>Accordion 1 </div>
                     <div class="accordion-output">
-                        <p class="accordion-content">«Земля» — роман Михаила Елизарова, над которым писатель работал в 2014—2019 годах. Официально издан московским издательством АСТ в 2020 году, а фактически — в октябре 2019 года.
-
-                            Первое литературное произведение автора после семилетнего перерыва. Выход романа стал одной из самых громких премьер сезона. Произведение привлекло внимание литературного сообщества. Главный герой книги — Владимир Кротышев, работающий землекопом и охранником в похоронной сфере. Молодой человек испытывает мистическую тягу к «могильной» жизни с раннего детства. Действие романа разворачивается в позднем СССР и в постсоветской России.
-                            
-                        </p>
+                        <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</p>
                     </div>   
                 </div>
                 
@@ -76,6 +76,8 @@
         </content>
         </div>
     </div>
-    <script src="js/index.js"></script> 
+    <script src="Components/tabs/tabs.js"></script>    
+    <script src="Components/accordion/accordion.js"></script>    
+    <script src="Components/switch/switch.js"></script>    
 </body>
 </html>
