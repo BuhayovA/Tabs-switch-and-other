@@ -1,0 +1,39 @@
+.accordion-container {
+  /* margin-bottom: 15px; */
+  /* transition-duration: 3s; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.accordion {
+  /* padding: 20px; */
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  padding: 15px;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.accordion-output {
+  padding: 0;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  text-align: justify;
+  transition: all 0.1s linear;
+}
+
+.active {
+  height: auto;
+  margin: 15px;
+  visibility: visible;
+  overflow: none;
+  opacity: 1;
+}
