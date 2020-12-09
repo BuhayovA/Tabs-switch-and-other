@@ -24,7 +24,7 @@ class Switch {
 }
 
 
-const themeSwitch = new Switch('.toggle-state', (state) => {
+const themeSwitch = new Switch('#toggle', (state) => {
     state === true ? bodyStyle.style.background = 'black' : bodyStyle.style.background = 'white'
     state === true ? bodyStyle.style.color = 'white' : bodyStyle.style.color = 'black'
     state === true ? switchStyle.style.background = '#282828' : switchStyle.style.background = '#3700b3'
@@ -34,9 +34,6 @@ const themeSwitch = new Switch('.toggle-state', (state) => {
     
     // console.log(state);
 })
-
-
-
 
 
 
