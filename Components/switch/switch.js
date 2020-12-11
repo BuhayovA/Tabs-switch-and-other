@@ -25,15 +25,21 @@ class Switch {
 
 
 const themeSwitch = new Switch('#toggle', (state) => {
+
+    // const date = new Date().getHours()
+    // if(date > 16) {
+    //     state = true
+    // }
+
     state === true ? bodyStyle.style.background = 'black' : bodyStyle.style.background = 'white'
     state === true ? bodyStyle.style.color = 'white' : bodyStyle.style.color = 'black'
     state === true ? switchStyle.style.background = '#282828' : switchStyle.style.background = '#3700b3'
 
     tabsStyle.forEach(elem => state === true ? elem.style.background = '#121212' : elem.style.background = '#6200ee')
     outputsStyle.forEach(elem => state === true ? elem.style.background = '#121212' : elem.style.background = 'white' )
-    
-    // console.log(state);
 })
+
+
 
 
 
