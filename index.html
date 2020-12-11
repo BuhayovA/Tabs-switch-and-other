@@ -4,66 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    
-    
-    <title>Tabs</title>
+    <title>Web-application</title>
 </head>
 <body>
     <div class="tabs-container">
         <div class="tabs">
-            <h2 class="tab tab_active" id="0">Item One</h2>
-            <h2 class="tab" id="1">Item Two</h2>
-            <h2 class="tab" id="2">Item Three</h2>
-            <h2 class="tab" id="3">Item Four</h2>
-            <h2 class="tab" id="4">Item Five</h2>
+            <h2 class="tabs__item tabs__item_active" id="0">Item One</h2>
+            <h2 class="tabs__item" id="1">Item Two</h2>
+            <h2 class="tabs__item" id="2">Item Three</h2>
+            <h2 class="tabs__item" id="3">Item Four</h2>
+            <h2 class="tabs__item" id="4">Item Five</h2>
+            <label class="label">
+                <div class="toggle">
+                  <input class="toggle-state" type="checkbox" checked  id="toggle"/>
+                  <div class="indicator"></div>
+                </div>
+            </label>
         </div>
         <div class="output">
-            <content class="content active" id='content-0'>Item One</content>
-            <content class="content" id='content-1'>
-                Item Two
+            <content class="output__content output__content_active" id='content-0'>Item One</content>
+            <content class="output__content" id='content-1'>
+                <div class="header">
+                    <div class="title">Test Web-application</div>
+                    <div class="menu">
+                        <div class="menu__item"></div>
+                        <div class="menu__item"></div>
+                        <div class="menu__item"></div>
+                        <div class="menu__item"></div>
+                    </div>
+                </div>
+                <div class="torso">
+                    <div class="text-informations">
+                        Основные правила:
+                        Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.
+                        Сам элемент сделайте абсолютно позиционированным (position: absolute).
+                        Поместите элемент посередине контейнера с помощью 'top: 50%'. (Заметьте, что '50%' здесь означают 50% высоты контейнера.)
+                        Используйте translate, чтобы переместить элемент вверх на половину своей собственной высоты. ( '50%' в 'translate(0, -50%)' указывают на высоту самого элемента.)
+                    </div>
+                </div>
             </content>
-            <content class="content" id='content-2'>Item Three</content>
-            <content class="content" id='content-3'>
+            <content class="output__content" id='content-2'>Item Three</content>
+            <content class="output__content" id='content-3'>
 
                 
                 <div class="accordion-container">
                     <div class="accordion" id='0'>Accordion 1 </div>
-                    <div class="accordion-output">
-                        <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</p>
-                    </div>   
+                        <div class="accordion__output">
+                            <p class="accordion__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</p>
+                        </div>   
                 </div>
                 
                 <div class="accordion-container">
                     <div class="accordion" id='1'>Accordion 2</div>
-                    <div class="accordion-output">
-                        <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</p>
-                    </div>   
+                        <div class="accordion__output">
+                            <p class="accordion__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</p>
+                        </div>   
                 </div>
 
                 <div class="accordion-container">
                         <div class="accordion" id='2'>Accordion 3</div>
-                        <div class="accordion-output">
-                            <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</p>
+                            <div class="accordion__output">
+                                <p class="accordion__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</p>
                         </div>   
                 </div>
 
             </content>
-            <content class="content" id='content-4'>
+            <content class="output__content" id='content-4'>
                 
                 
                 <div class="tabs-container">
-                <div class="tabs">
-                    <h2 class="tab tab_active" id="0">Item One</h2>
-                    <h2 class="tab" id="1">Item Two</h2>
-                    <h2 class="tab" id="2">Item Three</h2>
-                    <h2 class="tab" id="3">Item Four</h2>
-                </div>
+                    <div class="tabs">
+                        <h2 class="tabs__item tabs__item_active" id="0">Item One</h2>
+                        <h2 class="tabs__item" id="1">Item Two</h2>
+                        <h2 class="tabs__item" id="2">Item Three</h2>
+                        <h2 class="tabs__item" id="3">Item Four</h2>
+                    </div>
                 <div class="output">
-                    <content class="content active" id='content-0'>Item</content>
-                    <content class="content" id='content-1'>Item Two</content>
-                    <content class="content" id='content-2'>Item Three</content>
-                    <content class="content" id='content-3'>Item Four</content>
-                    <content class="content" id='content-3'>Item Four</content>
+                    <content class="output__content output__content_active" id='content-0'>Item</content>
+                    <content class="output__content" id='content-1'>Item Two</content>
+                    <content class="output__content" id='content-2'>Item Three</content>
+                    <content class="output__content" id='content-3'>Item Four</content>
+                    <content class="output__content" id='content-3'>Item Four</content>
 
                 </div>
             </div>

@@ -1,4 +1,4 @@
-.tab {
+.tabs__item {
   position: relative;
   color: white;
   margin-right: 5px;
@@ -22,7 +22,7 @@
   border-radius: 5px;
 }
 
-.tab_active {
+.tabs__item_active {
   background: #3700b3;
   cursor: default;
   transition: all ease 0.3s;
@@ -30,7 +30,7 @@
   /* font-weight: 500; */
   /* font-size: 1vw; */
 }
-.content {
+.output__content {
   display: none;
   padding: 2%;
   font-size: 20px;
@@ -38,6 +38,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.active {
+.output__content_active {
   display: block;
 }

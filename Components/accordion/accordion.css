@@ -20,7 +20,7 @@
   border-radius: 10px;
 }
 
-.accordion-output {
+.accordion__output {
   padding: 0;
   visibility: hidden;
   height: 0;
@@ -30,7 +30,7 @@
   transition: all 0.1s linear;
 }
 
-.active {
+.accordion__output_active {
   height: auto;
   margin: 15px;
   visibility: visible;

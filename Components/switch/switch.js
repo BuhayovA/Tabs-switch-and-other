@@ -1,7 +1,7 @@
 let tabsStyle = document.querySelectorAll('.tabs')
 let switchStyle = document.querySelector('.toggle')
 let bodyStyle = document.querySelector('body')
-let outputsStyle = document.querySelectorAll('.content')
+let outputsStyle = document.querySelectorAll('.output__content')
 
 
 class Switch {

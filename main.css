@@ -2,6 +2,7 @@
 @import url(/Components/switch/switch.css);
 @import url(/Components/tabs/tabs.css);
 @import url(/Components/accordion/accordion.css);
+@import url(/Components/outputs/output_content/outputs__content.css);
 
 body {
   font-family: "Montserrat", sans-serif;
