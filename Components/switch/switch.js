@@ -1,7 +1,8 @@
 let tabsStyle = document.querySelectorAll('.tabs')
-let switchStyle = document.querySelector('.toggle')
+let switchStyle = document.querySelector('.switch-container')
 let bodyStyle = document.querySelector('body')
 let outputsStyle = document.querySelectorAll('.output__content')
+let infoSwitch = document.querySelector('.switch__info')
 
 
 class Switch {
@@ -31,9 +32,9 @@ const themeSwitch = new Switch('#toggle', (state) => {
 
     tabsStyle.forEach(elem => state === true ? elem.style.background = '#121212' : elem.style.background = '#6200ee')
     outputsStyle.forEach(elem => state === true ? elem.style.background = '#121212' : elem.style.background = 'white' )
-    
-    // console.log(state);
+    state === true ? infoSwitch.innerHTML = 'ON' :  infoSwitch.innerHTML = 'OFF'
 })
+
 
 
 

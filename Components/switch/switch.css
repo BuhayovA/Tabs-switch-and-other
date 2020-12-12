@@ -1,4 +1,4 @@
-.label {
+.switch {
   display: inline-flex;
   align-items: center;
   cursor: pointer;
@@ -7,11 +7,11 @@
   margin-right: 15px;
 }
 
-.label-text {
+.switch-text {
   margin-left: 16px;
 }
 
-.toggle {
+.switch-container {
   isolation: isolate;
   position: relative;
   height: 30px;
@@ -21,11 +21,11 @@
   background: #3700b3;
 }
 
-.toggle-state {
+.switch-container__toggle-state {
   display: none;
 }
 
-.indicator {
+.switch-container__indicator {
   height: 100%;
   width: 200%;
   background: #ecf0f3;
@@ -34,6 +34,11 @@
   transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
 }
 
-.toggle-state:checked ~ .indicator {
+.switch-container__toggle-state:checked ~ .switch-container__indicator {
   transform: translateX(25%);
+}
+
+.switch__info {
+  margin: 15px;
+  color: white;
 }

@@ -1,11 +1,11 @@
-.accordion-container {
+.accordion {
   /* margin-bottom: 15px; */
   /* transition-duration: 3s; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding: 10px;
 }
 
-.accordion {
+.accordion__title {
   /* padding: 20px; */
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -15,7 +15,7 @@
   transition: all ease 0.2s;
 }
 
-.accordion:hover {
+.accordion__title:hover {
   background-color: #ccc;
   border-radius: 10px;
 }
